@@ -2,25 +2,108 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-// Custom Styles
-body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
+
+//Mix Ins
+@mixin center-content() {
+  margin: 0 auto;
+  width: 1000px;
 }
 
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+// Custom Styles
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+    &:focus {
+    outline: 0;
   }
+}
+
+body {
+
+}
+
+header {
+  @include outer-container;
+  max-width: 100%;
+  padding-top: 10px;
+  // padding-bottom: 10px;
+  min-width: 1000px;
+  background-color: HSLA(0, 0%, 96%, 1);
+  border-bottom: 1px solid HSLA(0, 0%, 90%, 1);
+  a {
+    text-decoration: none;
+     color: HSLA(0, 0%, 20%, 1);
+
+     &:hover {
+      color: HSLA(210, 53%, 51%, 1);
+     }
+  }
+}
+
+.left-header {
+  @include span-columns(6);
+  overflow: hidden;
+  // display: inline-block;
+
+  ul li {
+    display: inline-block;
+  }
+
+  .logo {
+    float: left;
+    margin-right: 10px;
+    margin-left: -2px;
+    // color: #333;
+    white-space: nowrap;
+  }
+  input {
+    position: relative;
+    width: 100%;
+    min-height: 28px;
+    padding: 4px 20px 4px 8px;
+    font-size: 12px;
+  }
+
+
+}
+
+.right-header {
+  @include span-columns(6);
+  overflow: hidden;
+  // display: inline-block;
+
+  li {
+    // margin-right: 16px;
+  }
+  ul li {
+    display: inline-block;
+
+  }
+
+  .handle {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  a li.avatar-list {
+    margin: 0;
+  }
+  
+
+ 
+
+  .avatar-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+  }
+
+  .list-right {
+    li {
+      margin-right: 16px;
+    }
+  }
+
+ 
 }
