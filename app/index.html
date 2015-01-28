@@ -25,7 +25,7 @@
   </head>
   <body>
     <header>
-      <div class="left-header">
+      <!-- <div class="left-header">
         <a href="#" class="logo"><span class="octicon octicon-mark-github"></span></a>
         <form action="search-text">
           <input type="text" placeholder="Search GitHub">
@@ -33,332 +33,113 @@
         <ul class="explore-list">
           <li><a href="#">Explore</a></li>
           <li><a href="#">Gist</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Help</a></li>
-        </ul>
-      </div>
-      <div class="right-header">
-        <div class="avatar-name">
-          <ul class="icon-list">
-            <a href="#">
-              <li class="avatar-list"><img src="https://avatars1.githubusercontent.com/u/7331768?v=3&s=40" class="avatar-img" alt="avatar"></li>
-              <li class="handle">zenki14</li>
-            </a>
+          <li><a href="#">Gist</a></li>
+          <li><a href="#">Help</a></li> -->
+      <nav>
+        <div class="left-header"></div>
+          <ul class="left-side">
+            <li><a href="#" class="logo"><span class="octicon octicon-mark-github"></span></a></li>
+            <li><form action="search"><input class="search-bar" type="text" placeholder="Search GitHub"></form></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Gist</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Help</a></li>
           </ul>
         </div>
-        <div class="list-right">
-          <ul>
-            <li><span class="octicon octicon-plus"></span><span class="octicon octicon-triangle-down"></span></li>
-            <li><a href="#"><span class="octicon octicon-inbox"></span></a></li>
-            <li><a href="#"><span class="octicon octicon-gear"></span></a></li>
-            <li><a href="#"><span class="octicon octicon-sign-out"></span></a></li>
+        <div class="right-header">
+          <ul class="right-side">
+            <li><a href="#"><img src="#" alt="avatar"><span class="user-name"></span></a></li>
+            <li><a href="#"><span class="octicon octicon-plus menu-down"></span></a></li>
+            <li><a href="https://github.com/notifications"><span class="octicon octicon-inbox"></span></a></li>
+            <li><a href="https://github.com/settings/profile"><span class="octicon octicon-gear"></span></a></li>
+            <li><a href="https://github.com"><span class="octicon octicon-sign-out"></span></a></li>
           </ul>
         </div>
-      </div>
-    </header>
+      </nav>
+    </header> 
     <div class="container">
       <aside>
-        <div class="sidebar">
-          <a href="#" class="sidebar-avatar"><img src="https://avatars2.githubusercontent.com/u/7331768?v=3&s=460" alt="large avatar"></a>
-          <h1 class="sidebar-names">
-            <span class="side-fullname"></span>
-            <span class="side-username"></span>
-          </h1>
-          <ul class="side-details">
-            <li class="side-detail">
-              <span class="octicon octicon-mail"></span>
-              <a href="#" class="email">zenki14@gmail.com</a>
-            </li>
-            <li class="side-detail">
-              <span class="octicon octicon-clock"></span>
-              <span class="join-label">Joined on </span>
-              <time class="join-date">Apr 17, 2014</time>
-            </li>
+        <div class="account">
+          <a href="#"><img src="#" alt="avatar"></a>
+          <h1 class="full-name"></h1>
+          <h4 class="account-name"></h4>
+        </div>
+        <ul class="contact">
+          <li><span class="octicon octicon-mail"></span><a href="#"></a></li>
+          <li><span class="octicon octicon-clock"></span>Joined on </li>
+        </ul>
+        <ul class="sidebar-stats">
+         <li><a href="#"><strong></strong><span>Followers</span></a></li>
+         <li><a href="#"><strong></strong><span>Starred</span></a></li>
+         <li><a href="#"><strong></strong><span>Following</span></a></li>
+        </ul>
+        <div class="organizations">
+          <h3>Organizations</h3>
+          <ul id="orgs">
+            <li><img src="#" alt="org icon"></li>
           </ul>
-          <div class="sidebar-stats">
-            <a href="#" class="sidebar-stat">
-              <strong class="sidebar-stat-count">3</strong>
-              <span class="text-muted">Followers</span>
-            </a>
-            <a href="#" class="sidebar-stat">
-              <strong class="sidebar-stat-count">0</strong>
-              <span class="text-muted">Starred</span>
-            </a>
-            <a href="#" class="sidebar-stat">
-              <strong class="sidebar-stat-count">2</strong>
-              <span class="text-muted">Following</span>
-            </a>
-          </div>
-          <div class="orgs">
-            <h3>Organizations</h3>
-            <a href="#" class="tooltipped tooltipped-n avatar-group-item">
-              <img src="#" alt="group icon" class="avatar">
-            </a>
-          </div>
         </div>
       </aside>
-      <article class="column three-fourths">
-        <div class="tabnav">
-          <div class="tabnav-right">
-            <a href="https://github.com/account" class="minibutton tabnav-widget">
-              <span class="octicon octicon-pencil"></span>
-              Edit profile
-            </a>
+      <article class="content">
+        <nav class="navtabs-left">
+          <ul>
+            <li><span class="octicon octicon-diff-added"></span>Contributions</li>
+            <li class="active"><span class="octicon octicon-repo"></span>Repositories</li>
+            <li><span class="octicon octicon-rss"></span>Public activity</li>
+          </ul>
+          <div class="navtabs-right">
+            <div class="slim-button"><span class="octicon octicon-pencil"></span>Edit profile</div>
           </div>
-          <ul class="tabnav-tabs">
-            <li data-tab="contributions">
-              <a href="https://github.com/zenki14/" class="tabnav-tab ">
-                <span class="octicon octicon-diff-added"></span>
-                Contributions
-              </a>
-            </li>
-            <li data-tab="repo">
-              <a href="https://github.com/zenki14?tab=repositories" class="tabnav-tab selected">
-                <span class="octicon octicon-repo"></span>
-                Repositories
-              </a>
-            </li>
-            <li data-tab="activity">
-              <a href="https://github.com/zenki14?tab=activity" class="tabnav-tab ">
-               <span class="octicon octicon-rss"></span>
-                Public activity
-              </a>
-            </li>
+        </nav>
+        <div class="tab-search-bar">
+          <form action="search">
+            <input type="text" class="repository-search" placeholder="find a repository...">
+          </form>
+          <div class="make-new-button"><span class="octicon octicon-repo"></span>New</div>
+          <ul>
+            <li><a href="#">Mirrors</a></li>
+            <li><a href="#">Forks</a></li>
+            <li><a href="#">Sources</a></li>
+            <li><a href="#">Private</a></li>
+            <li><a href="#">Public</a></li>
+            <li class="active"><a href="#">All</a></li>
           </ul>
         </div>
-        <div class="tab-content js-repo-filter">
-          <div class="repo-tab">
-            <div class="filter-bar">
-              <a href="https://github.com/new" class="button primary new-repo">
-                <span class="octicon octicon-repo"></span>
-                New
-              </a>
-              <ul class="repo_filterer">
-                <li>
-                  <a href="#" class="repo_filter js-repo-filter-tab">Mirrors</a>
-                </li>
-                <li>
-                  <a href="#" class="repo_filter js-repo-filter-tab">Forks</a>
-                </li>
-                <li>
-                  <a href="#" class="repo_filter js-repo-filter-tab">Sources</a>
-                </li>
-                <li>
-                  <a href="#" class="repo_filter js-repo-filter-tab">Private</a>
-                </li>
-                <li>
-                  <a href="#" class="repo_filter js-repo-filter-tab">Public</a>
-                </li>
-                <li class="all_repos">
-                  <a href="#" class="repo_filter js-repo-filter-tab">All</a>
-                </li>
-              </ul>
-              <form action="/search" class="repo-search" role="search">
-                <input type="hidden" name="user" value="zenki14">
-                <input type="text" id="your-repos-filter" name="q" class="filter_input js-filterable-field" placeholder="Find a repository..." tableindex="2">
-              </form>
+        <ul class="list-repository">
+          <li>
+            <div class="repo-info">
+              <h3><a href="#"></a></h3>
+              <div class="forked-from"><span class="octicon octicon-repo-forked"></span><a href="#"></a></div>
+              <p></p>
+              <span></span>
             </div>
-          </div>
-        </div>
+            <div class="repo-stats"><span></span>
+              <span class="octicon octicon-star"></span><span></span>
+              <span class="octicon octicon-git-branch"></span><span class="language"></span>
+            </div>
+          </li>
+        </ul>
       </article>
-   <!--    <article>
-        <div class="tabnav">
-          <div class="tabnav-right">
-            <a href="#" class="pencil-button">
-              <span class="octicon octicon-pencil"></span>
-              Edit profile
-            </a>
-          </div>
-          <ul class="tabnav-tabs">
-            <li data-tab="contributions">
-              <a href="#" class="tabnav-tab selected">
-                <span class="octicon octicon-diff-added"></span>
-                Contributions
-              </a>
-            </li>
-            <li data-tab="repo">
-              <a href="#" class="tabnav-tab">
-                <span class="octicon octicon-repo"></span>
-                Repositories
-              </a>
-            </li>
-            <li data-tab="activity">
-              <a href="#" class="tabnav-tab">
-                <span class="octicon octicon-rss"></span>
-                Public activity
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="tab-content">
-          <div class="contributions-tab">
-            <div class="popular-repos">
-              <div class="column one-half">
-                <div class="boxed-group flush">
-                  <h3>Popular repositories</h3>
-                  <ul class="boxed-group-inner mini-repo-list">
-                    <li class="public source">
-                      <a href="#" class="mini-repo-list-item">
-                        <span class="octicon octicon-repo"></span>
-                        <span class="repo-and-owner">
-                          <span class="repo"></span>
-                        </span>
-                        <span class="stars"><span class="octicon octicon-star"></span></span>
-                        <span class="repo-description"></span>
-                      </a>
-                    </li>
-                    <li class="public fork">
-                      <a href="" class="mini-repo-list-item">
-                        <span class="octicon octicon-repo-forked"></span>
-                        <span class="repo-and-owner">
-                          <span class="repo"></span>
-                        </span>
-                        <span class="stars"><span class="octicon octicon-star"></span></span>
-                        <span class="repo-description"></span>
-                      </a>
-                    </li>
-                    <li class="public source">
-                      <a href="#" class="mini-repo-list-item">
-                        <span class="octicon octicon-repo"></span>
-                        <span class="repo-and-owner">
-                          <span class="repo"></span>
-                        </span>
-                        <span class="stars"><span class="octicon octicon-star"></span></span>
-                        <span class="repo-description"></span>
-                      </a>
-                    </li>
-                    <li class="public source">
-                      <a href="#" class="mini-repo-list-item">
-                        <span class="octicon octicon-repo"></span>
-                        <span class="repo-and-owner">
-                          <span class="repo"></span>
-                        </span>
-                        <span class="stars"><span class="octicon octicon-star"></span></span>
-                        <span class="repo-description"></span>
-                      </a>
-                    </li>
-                    <li class="public fork">
-                      <a href="" class="mini-repo-list-item">
-                        <span class="octicon octicon-repo-forked"></span>
-                        <span class="repo-and-owner">
-                          <span class="repo"></span>
-                        </span>
-                        <span class="stars"><span class="octicon octicon-star"></span></span>
-                        <span class="repo-description"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="column one-half">
-                <div class="box-group flush">
-                  <h3>Repositories contributed to</h3>
-                  <ul class="boxed-group-inner mini-repo-list">
-                    <li class="public source">
-                      <a href="#" class="mini-repo-list-item css-truncate">
-                        <span class="repo-icon octicon octicon-repo"></span>
-                        <span class="repo-and-owner css-truncate-target">
-                          <span class="owner css-truncate-target"></span>
-                        </span>
-                        <span class="stars"><span class="octicon octicon-star"></span></span>
-                        <span class="repo-description css-truncate-target"></span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="boxed-group flush">
-              <span class="boxed-group-action tooltipped tooltipped-nw tooltipped-multiline">
-                <span class="octicon octicon-lock"></span>
-              </span>
-              <h3>Contributions</h3>
-              <div id="contributions-calendar" class="boxed-group-inner">
-              </div>
-            </div>
-            <div clas="activity-listing">
-              <div class="select-menu-right">
-                
-              </div>
-              <h2>Contribution activity</h2>
-              <div class="contribution-activity-listing">
-                <h3 class="conversation-list-heading">
-                  <div class="inner">
-                    <span class="octicon octicon-git-commit"></span>
-                    <span class="text-emphasized"></span>
-                  </div>
-                </h3>
-                <ul class="simple-conversation-list">
-                  <li>
-                    <a href="" class="title"></a>
-                  </li>
-                </ul>
-                <h3 class="conversation-list-heading">
-                  <div class="inner">
-                    <span class="octicon octicon-git-pull-request"></span>
-                    <span class="text-emphasized"></span>
-                  </div>
-                </h3>
-                <ol class="contribution-pulls-list">
-                  <li class="contribution">
-                    <span class="state-proposed"></span>
-                    <span class="num"></span>
-                    <a href="#" class="title"></a>
-                    <time></time>
-                    <span class="cmeta">
-                      <a href="#"></a>
-                    </span>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article> -->
     </div>
     <footer>
-      <div class="site-footer">
-        <ul class="site-footer-links right">
-          <li>
-            <a href="https://status.github.com/">Status</a>
-          </li>
-          <li>
-            <a href="https://developer.github.com/">API</a>
-          </li>
-          <li>
-            <a href="https://training.github.com/">Training</a>
-          </li>
-          <li>
-            <a href="https://shop.github.com/">Shop</a>
-          </li>
-          <li>
-            <a href="https://github.com/blog/">Blog</a>
-          </li>
-          <li>
-            <a href="http://github.com/about/">About</a>
-          </li>
+      <nav>
+        <ul class="footer-left">
+          <li>&copy;2015 GitHub, Inc.</li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
-        <a href="http://github.com/">
-          <span class="octicon octicon-mark-github" title="GitHub"></span>
-        </a>
-        <ul class="site-footer-links">
-          <li>
-            <span>&copy; 2015 GitHub, Inc.</span>
-          </li>
-          <li>
-            <a href="http://github.com/site/terms/">Terms</a>
-          </li>
-          <li>
-            <a href="https://github.com/site/privacy/">Privacy</a>
-          </li>
-          <li>
-            <a href="https://github.com/security/">Security</a>
-          </li>
-          <li>
-            <a href="https://github.com/contact/">Contact</a>
-          </li>
+        <ul class="footer-right">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Training</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Status</a></li>
         </ul>
-      </div>
+        <div class="footer-icon"><a href="#"><span class="mega-octicon octicon-mark-github"></span></a></div>
+      </nav>
     </footer>
 
 
@@ -370,6 +151,8 @@
     <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
+        <script src="scripts/repo.js"></script>
+        <script src="scripts/user.js"></script>
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
 </body>
