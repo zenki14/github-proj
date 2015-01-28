@@ -37,13 +37,13 @@
           <li><a href="#">Help</a></li> -->
       <nav>
         <div class="left-header"></div>
-          <ul class="left-side">
+          <ul class="explore-list">
             <li><a href="#" class="logo"><span class="octicon octicon-mark-github"></span></a></li>
             <li><form action="search"><input class="search-bar" type="text" placeholder="Search GitHub"></form></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Gist</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a class="nav-txt" href="#">Explore</a></li>
+            <li><a class="nav-txt" href="#">Gist</a></li>
+            <li><a class="nav-txt" href="#">Blog</a></li>
+            <li><a class="nav-txt" href="#">Help</a></li>
           </ul>
         </div>
         <div class="right-header">
@@ -69,9 +69,9 @@
           <li><span class="octicon octicon-clock"></span>Joined on </li>
         </ul>
         <ul class="sidebar-stats">
-         <li><a href="#"><strong></strong><span>Followers</span></a></li>
-         <li><a href="#"><strong></strong><span>Starred</span></a></li>
-         <li><a href="#"><strong></strong><span>Following</span></a></li>
+         <li><a href="#"><strong></strong><small>Followers</small></a></li>
+         <li><a href="#"><strong></strong><small>Starred</small></a></li>
+         <li><a href="#"><strong></strong><small>Following</small></a></li>
         </ul>
         <div class="organizations">
           <h3>Organizations</h3>
@@ -84,16 +84,17 @@
         <nav class="navtabs-left">
           <ul>
             <li><span class="octicon octicon-diff-added"></span>Contributions</li>
-            <li class="active"><span class="octicon octicon-repo"></span>Repositories</li>
+            <li class="clicked"><span class="octicon octicon-repo"></span>Repositories</li>
             <li><span class="octicon octicon-rss"></span>Public activity</li>
           </ul>
           <div class="navtabs-right">
-            <div class="slim-button"><span class="octicon octicon-pencil"></span>Edit profile</div>
+            <div class="edit-button"><span class="octicon octicon-pencil"></span>Edit profile</div>
           </div>
         </nav>
         <div class="tab-search-bar">
           <form action="search">
             <input type="text" class="repository-search" placeholder="find a repository...">
+            <input type="submit" class="searchy-button" title="Search">
           </form>
           <div class="make-new-button"><span class="octicon octicon-repo"></span>New</div>
           <ul>
@@ -102,16 +103,27 @@
             <li><a href="#">Sources</a></li>
             <li><a href="#">Private</a></li>
             <li><a href="#">Public</a></li>
-            <li class="active"><a href="#">All</a></li>
+            <li class="all-bold"><a href="#">All</a></li>
           </ul>
         </div>
         <ul class="list-repository">
           <li>
-            <div class="repo-info">
+            <div class="repo-info-forked">
               <h3><a href="#"></a></h3>
-              <div class="forked-from"><span class="octicon octicon-repo-forked"></span><a href="#"></a></div>
+              <div class="forked"><span class="octicon octicon-repo-forked"></span><a href="#"></a></div>
               <p></p>
-              <span></span>
+              <small></small>
+            </div>
+            <div class="repo-stats"><span></span>
+              <span class="octicon octicon-star"></span><span></span>
+              <span class="octicon octicon-git-branch"></span><span class="language"></span>
+            </div>
+          </li>
+          <li>
+            <div class="repo-info-sourced">
+              <h3><a href="#"></a></h3>
+              <p></p>
+              <small></small>
             </div>
             <div class="repo-stats"><span></span>
               <span class="octicon octicon-star"></span><span></span>
