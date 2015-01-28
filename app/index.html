@@ -48,7 +48,7 @@
         </div>
         <div class="right-header">
           <ul class="right-side">
-            <li><a href="#"><img src="#" alt="avatar"><span class="user-name"></span></a></li>
+            <li><a href="<% html_url %>"><img src="<% avatar_url %>" alt="avatar"><span class="user-name"><% login %></span></a></li>
             <li><a href="#"><span class="octicon octicon-plus menu-down"></span></a></li>
             <li><a href="https://github.com/notifications"><span class="octicon octicon-inbox"></span></a></li>
             <li><a href="https://github.com/settings/profile"><span class="octicon octicon-gear"></span></a></li>
@@ -60,23 +60,23 @@
     <div class="container">
       <aside>
         <div class="account">
-          <a href="#"><img src="#" alt="avatar"></a>
-          <h1 class="full-name"></h1>
-          <h4 class="account-name"></h4>
+          <a href="#"><img src="<% user.avatar_url %>" alt="avatar"></a>
+          <h1 class="full-name"><% user.name %></h1>
+          <h4 class="account-name"><% user.login %></h4>
         </div>
         <ul class="contact">
-          <li><span class="octicon octicon-mail"></span><a href="#"></a></li>
-          <li><span class="octicon octicon-clock"></span>Joined on </li>
+          <li><span class="octicon octicon-mail"></span><a href="<% user.email %>"></a></li>
+          <li><span class="octicon octicon-clock"></span>Joined on <% user.created_at %></li>
         </ul>
         <ul class="sidebar-stats">
-         <li><a href="#"><strong></strong><small>Followers</small></a></li>
-         <li><a href="#"><strong></strong><small>Starred</small></a></li>
-         <li><a href="#"><strong></strong><small>Following</small></a></li>
+         <li><a href="#"><strong><% user.followers %></strong><small>Followers</small></a></li>
+         <li><a href="#"><strong></strong>0<small>Starred</small></a></li>
+         <li><a href="#"><strong><% user.following %></strong><small>Following</small></a></li>
         </ul>
         <div class="organizations">
           <h3>Organizations</h3>
           <ul id="orgs">
-            <li><img src="#" alt="org icon"></li>
+            <li><img src="<% avatar_url %>" alt="org icon"></li>
           </ul>
         </div>
       </aside>
@@ -109,25 +109,25 @@
         <ul class="list-repository">
           <li>
             <div class="repo-info-forked">
-              <h3><a href="#"></a></h3>
-              <div class="forked"><span class="octicon octicon-repo-forked"></span><a href="#"></a></div>
-              <p></p>
-              <small></small>
+              <h3><a href="#"><% name %></a></h3>
+              <div class="forked"><span class="octicon octicon-repo-forked"></span><a href="#"><% .full_name %></a></div>
+              <p><% description %></p>
+              <small>Updated <% updated_at %></small>
             </div>
-            <div class="repo-stats"><span></span>
-              <span class="octicon octicon-star"></span><span></span>
-              <span class="octicon octicon-git-branch"></span><span class="language"></span>
+            <div class="repo-stats"><span><% .language %></span>
+              <span class="octicon octicon-star"></span><span>0</span>
+              <span class="octicon octicon-git-branch"></span><span class="language"><% forks_count %></span>
             </div>
           </li>
           <li>
             <div class="repo-info-sourced">
-              <h3><a href="#"></a></h3>
-              <p></p>
-              <small></small>
+              <h3><a href="#"></a><% .name %></h3>
+              <p><% description %></p>
+              <small>Updated <% updated_at %></small>
             </div>
-            <div class="repo-stats"><span></span>
-              <span class="octicon octicon-star"></span><span></span>
-              <span class="octicon octicon-git-branch"></span><span class="language"></span>
+            <div class="repo-stats"><span><% .language %></span>
+              <span class="octicon octicon-star"></span><span>0</span>
+              <span class="octicon octicon-git-branch"></span><span class="language"><% .sources_count %></span>
             </div>
           </li>
         </ul>

@@ -7,14 +7,6 @@ $picSize: 230px;
 $orgIconSize: ($picSize / 5) - 3;
 $pageWidth: 1020px;
 
-$cLink: #4183c4;
-$cGray3: #333;
-$cGray6: #666;
-$cGray7: #777;
-$cGray8: #888;
-$cGray9: #999;
-$cGrayC: #ccc;
-$cGrayD: #ddd;
 
 //Mix Ins
 @mixin centerPage() {
@@ -27,7 +19,7 @@ $cGrayD: #ddd;
   width: $width;
   height: $height;
   padding: 7px 8px;
-  border: 1px solid $cGrayC;
+  border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
 }
@@ -47,9 +39,7 @@ $cGrayD: #ddd;
   cursor: pointer;
 }
 
-.std-button {
-  @include baseButton;
-}
+
 
 .edit-button {
   @include baseButton;
@@ -113,6 +103,10 @@ a {
 
 h3 { 
   font-size: 20px; margin-bottom: 13px;
+}
+
+h4 {
+  
 }
 
 p { 

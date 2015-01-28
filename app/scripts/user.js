@@ -1,4 +1,4 @@
-{
+var user = {
 "login": "zenki14",
 "id": 7331768,
 "avatar_url": "https://avatars.githubusercontent.com/u/7331768?v=3",
@@ -29,4 +29,4 @@
 "following": 2,
 "created_at": "2014-04-17T23:20:54Z",
 "updated_at": "2015-01-26T15:19:37Z"
-}
+};
